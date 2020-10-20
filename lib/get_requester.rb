@@ -16,8 +16,6 @@ class GetRequester
 
   def parse_json
     js = JSON.parse(self.get_response_body)
-    js.collect do |inst|
-      js[inst]
-    end
+    js
   end
 end
