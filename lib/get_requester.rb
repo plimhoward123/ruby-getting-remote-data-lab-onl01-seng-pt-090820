@@ -1,5 +1,5 @@
 class GetRequester
-  attr_reader :URL
+  attr_accessor :URL
   def initialize(URL)
     @URL = URL
   end
